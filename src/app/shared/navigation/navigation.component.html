@@ -1,0 +1,26 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>App Navigation</h1>
+</div>
+
+<ul>
+  <li>
+    <a [routerLink]="['/exampleA/page', {outlets: { exampleA_form: 'exampleA', exampleA_list:null }} ]">Example A</a>
+  </li>
+  <li>
+    <a [routerLink]="['/exampleA/page', {outlets: { exampleA_form: 'exampleA', exampleA_list:null }} ]">ExampleA - Form</a>
+  </li>
+  <li>
+    <a [routerLink]="['/exampleA/page', {outlets: { exampleA_list: 'exampleA', exampleA_form: null }} ]">ExampleA - List</a>
+  </li>
+  <li>
+    <a routerLink="/exampleB">Example B</a>
+  </li>
+  <li>
+    <a routerLink="/exampleC">Example C</a>
+  </li>
+</ul>
+
+<br />
+
+<router-outlet></router-outlet>
