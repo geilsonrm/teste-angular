@@ -5,11 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
+import { SomaComponent } from './soma/soma.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SomaComponent
   ],
   imports: [
     BrowserModule,

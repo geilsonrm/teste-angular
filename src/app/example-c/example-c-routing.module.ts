@@ -13,9 +13,7 @@ const routes: Routes = [
   {
     path: 'page',
     component: ExampleCComponent,
-    children: [
-      { path: 'exampleC', component: FormComponent, outlet: 'exampleC_form' }
-    ]
+    children: [{ path: 'exampleC', component: FormComponent, outlet: 'exampleC_form' }]
   }
 ];
 
