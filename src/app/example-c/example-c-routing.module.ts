@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { ExampleCComponent } from './example-c.component';
 import { FormComponent } from './form/form.component';
+import { ExampleCComponent } from './example-c.component';
+import { FormComponent as FormComponentA } from '../example-a/form/form.component';
 
 const routes: Routes = [
   {
@@ -13,8 +14,12 @@ const routes: Routes = [
   {
     path: 'page',
     component: ExampleCComponent,
-    children: [{ path: 'exampleC', component: FormComponent, outlet: 'exampleC_form' }]
-  }
+    children: [
+      { path: 'exampleC', component: FormComponent, outlet: 'exampleC_form' },
+      { path: 'exampleA', component: FormComponentA, outlet: 'exampleA_form' }
+    ]
+  },
+
 ];
 
 @NgModule({

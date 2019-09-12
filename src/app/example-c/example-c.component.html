@@ -1,2 +1,4 @@
 <p>Examplo C</p>
+<a [routerLink]="['/exampleC/page', {outlets: { exampleA_form: 'exampleA', exampleA_list: null }} ]">Abrir Form A</a>
 <router-outlet name="exampleC_form"></router-outlet>
+<router-outlet name="exampleA_form"></router-outlet>
