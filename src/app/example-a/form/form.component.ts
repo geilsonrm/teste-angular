@@ -16,9 +16,4 @@ export class FormComponent implements OnInit {
     // this.router.navigate(['../exampleA', {outlets: {exampleA_list: null}}]);
   }
 
-  teste() {
-    this.router.navigate(['/exampleA/page', { outlets: { exampleA_list: 'exampleA', exampleA_form: null } }]);
-
-    console.log('teste')
-  }
 }

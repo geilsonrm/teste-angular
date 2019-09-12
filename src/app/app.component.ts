@@ -17,5 +17,5 @@ export class AppComponent implements OnInit {
       console.log('current route: ', this.router.url.toString());
     });
   }
-  
+
 }

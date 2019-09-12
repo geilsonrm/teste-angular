@@ -11,9 +11,4 @@ export class ListComponent implements OnInit {
 
   ngOnInit() {}
 
-  teste() {
-    this.router.navigate(['/exampleA/page',{ outlets: { exampleA_form: 'exampleA', exampleA_list:null } }]);
-
-    console.log('teste');
-  }
 }

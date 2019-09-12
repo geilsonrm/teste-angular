@@ -12,8 +12,8 @@ export class ExampleAComponent implements OnInit {
   ngOnInit() {
     // this.router.navigate(['/exampleA/page', {outlets: { exampleA_form: ['exampleA'] }}]);
     // this.router.navigate(['../exampleA/a']);
-    console.log(this.router)
-    this.router.navigate(['/exampleA/page', { outlets: { exampleA_list: 'exampleA' } }]);
+    
+    // this.router.navigate(['/exampleA/page', { outlets: { exampleA_list: 'exampleA' } }]);
 
   }
 
